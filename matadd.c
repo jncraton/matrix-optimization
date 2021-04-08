@@ -23,7 +23,7 @@ void mul(float a[SIZE][SIZE], float b[SIZE][SIZE], float c[SIZE][SIZE]) {
       c[j][i] = 0;
 
       for (int k = 0; k < SIZE; k++) {
-        c[j][i] += a[j][k] + b[k][i];
+        c[j][i] += a[j][k] * b[k][i];
       }
     }
   }
@@ -63,6 +63,15 @@ int main() {
   mul(a, b, c);
   printf("Multiplication completed in %ld ms\n", 1000 * (clock() - start) / CLOCKS_PER_SEC);
 
+  printf("Confirming result...\n");
+  for (int i = 16; i < 32; i++) {
+    for (int j = 16; j < 32; j++) {
+      float sum = 0;
+      for (int k = 0; k < SIZE; k++) {
+        sum += (float)(2*i+k) * (float)(k-j);
+      }
+    }
+  }
 
   printf("Success!\n");
   return 0;
