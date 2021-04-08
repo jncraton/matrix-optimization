@@ -1,13 +1,13 @@
 all: run
 
-matadd: matadd.c
-	gcc -Wall -Wextra -Werror -march=core2 -O2 matadd.c -o matadd
+matrix: matrix.c
+	gcc -Wall -Wextra -Werror -march=core2 -O2 matrix.c -o matrix
 
-run: matadd
-	./matadd
+run: matrix
+	./matrix
 
-perf: matadd
-	sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses ./matadd
+perf: matrix
+	sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses ./matrix
 
 clean:
 	rm -f order1 order2
