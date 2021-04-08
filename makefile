@@ -10,5 +10,5 @@ perf: matrix
 	sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses ./matrix
 
 clean:
-	rm -f order1 order2
+	rm -f matrix
 	
