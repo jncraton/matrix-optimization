@@ -1,7 +1,7 @@
 all: run
 
 matadd: matadd.c
-	gcc -Wall -Wextra -Werror -march=core2 matadd.c -o matadd
+	gcc -Wall -Wextra -Werror -march=core2 -O2 matadd.c -o matadd
 
 run: matadd
 	./matadd
