@@ -9,6 +9,7 @@ Matrix Addition
 Matrix addition results in a new matrix that is the sum of corresponding entries from two matrices. Here is an example:
 
 ![Matrix addition](https://wikimedia.org/api/rest_v1/media/math/render/svg/b7da39614abf8978240dd50e3111f7dfa416daa1)
+
 The basic algorithm for implementing matrix addition is:
 
 ```python
@@ -29,7 +30,6 @@ Matrix multiplication can be defined as:
 Each element in the resulting matrix will be the sum of the products in a row from matrix a and a column from matrix b.
 
 ![Matrix multiplication diagram](https://upload.wikimedia.org/wikipedia/commons/e/eb/Matrix_multiplication_diagram_2.svg)
-
 
 An algorithm for matrix multiplication would be:
 
