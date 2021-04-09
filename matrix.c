@@ -20,10 +20,10 @@ void mul(float a[SIZE][SIZE], float b[SIZE][SIZE], float c[SIZE][SIZE]) {
 
   for (int i = 0; i < SIZE; i++) {
     for (int j = 0; j < SIZE; j++) {
-      c[j][i] = 0;
+      c[i][j] = 0;
 
       for (int k = 0; k < SIZE; k++) {
-        c[j][i] += a[j][k] * b[k][i];
+        c[i][j] += a[i][k] * b[k][j];
       }
     }
   }
