@@ -1,7 +1,7 @@
 Matrix Optimization
 ===================
 
-This project provide a matrix additional and matrix multiplication subroutines. These subroutines are currently suboptimal.
+This project provides a matrix addition and matrix multiplication subroutine. These subroutines are currently suboptimal.
 
 Matrix Addition
 ---------------
@@ -19,6 +19,8 @@ for row in matrix:
 ```
 
 This algorithm requires iterating over the columns while iterating over the rows, so it is O(n^2) with respect to the size of the matrix.
+
+The implementation for this algorithm is found in the `add` function in matrix.c.
 
 Matrix Multiplication
 ---------------------
@@ -42,6 +44,8 @@ for row in matrix:
 ```
 
 This algorithm requires iterating over the columns while iterating over the rows and then iterating over the items within an entire row and column, so it is O(n^3) with respect to the size of the matrix. Note that this is not an optimal algorithm. The optimal algorithm is an area of ongoing research, with the current state-of-the-art being [O(n^2.37286](https://arxiv.org/pdf/2010.05846.pdf).
+
+The implementation for this algorithm is found in the `mul` function in matrix.c.
 
 Memory and Cache Optimization
 -----------------------------
