@@ -43,7 +43,7 @@ for row in matrix:
       c[row][col] += a[i][col] + b[row][i]
 ```
 
-This algorithm requires iterating over the columns while iterating over the rows and then iterating over the items within an entire row and column, so it is O(n^3) with respect to the size of the matrix. Note that this is not an optimal algorithm. The optimal algorithm is an area of ongoing research, with the current state-of-the-art being [O(n^2.37286](https://arxiv.org/pdf/2010.05846.pdf).
+This algorithm requires iterating over the columns while iterating over the rows and then iterating over the items within an entire row and column, so it is O(n^3) with respect to the size of the matrix. Note that this is not an optimal algorithm. The optimal algorithm is an area of ongoing research, with the current state-of-the-art being [O(n^2.37286)](https://arxiv.org/pdf/2010.05846.pdf).
 
 The implementation for this algorithm is found in the `mul` function in matrix.c.
 
