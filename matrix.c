@@ -70,6 +70,7 @@ int main() {
       for (int k = 0; k < SIZE; k++) {
         sum += (float)(2*i+k) * (float)(k-j);
       }
+      assert(sum == c[i][j]);
     }
   }
 
