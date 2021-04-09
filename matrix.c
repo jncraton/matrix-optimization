@@ -1,7 +1,6 @@
 #include <time.h>
 #include <assert.h>
 #include <stdio.h>
-#include <malloc.h>
 
 #define SIZE 1024
 
